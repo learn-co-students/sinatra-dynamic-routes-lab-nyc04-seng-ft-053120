@@ -7,7 +7,6 @@ class App < Sinatra::Base
     #{@name}
   end
 
-  # Code your final two routes here:
   get "/square/:number" do
     number = params[:number].to_i
     "#{number * number}"
